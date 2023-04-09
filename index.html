@@ -8,9 +8,59 @@
 </head>
 <body>
 
-    <form action="/" method="post">
 
-    </form>
-    
+    <!--Logo Section-->
+    <div id="logo-container">
+
+    </div>
+
+    <!--Form Section-->
+
+    <div id="form-container">
+        
+        <form action="/" method="post">
+
+            <fieldset id="personal-info">
+                <label for="fname">
+                    First Name
+                    <input type="text" name="fname" id="fname">
+                </label>
+                <label for="lname">
+                    Last Name
+                    <input type="text" name="lname" id="lname">
+                </label>
+            </fieldset>
+
+            <fieldset id="contact-info">
+                <label for="email">
+                    Email
+                    <input type="email" name="email" id="email">
+                </label>
+                <label for="phone">
+                    Phone
+                    <input type="tel" name="phone" id="phone">
+                </label>
+            </fieldset>
+
+            <fieldset id="password-info">
+                <label for="pass">
+                    Password
+                    <input type="password" name="pass" id="pass">
+                </label>
+                <label for="cnfm">
+                    Confirm Password
+                    <input type="password" name="cnfm" id="cnfm">
+                </label>
+            </fieldset>
+
+            <button type="submit">Create Account</button>
+            <p>
+                Already have an account? <span>Log in</span>
+            </p>
+
+        </form>
+        
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,26 @@
+#container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#logo-container{
+    background-color: pink;
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+}
+
+#form-container{
+    background-color: lightblue;
+    flex: 1 1 60%;
+
+    display: flex;
+    align-items: center;
+}
+
+

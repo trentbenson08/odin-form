@@ -5,62 +5,67 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Signup Form</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <div id="container">
+    
+        <!--Logo Section-->
+        <div id="logo-container">
+            <h1>this is the logo section</h1>
+        </div>
+    
+        <!--Form Section-->
+    
+        <div id="form-container">
+    
+            <form action="/" method="post">
+    
+                <fieldset id="personal-info">
+                    <label for="fname">
+                        First Name
+                        <input type="text" name="fname" id="fname">
+                    </label>
+                    <label for="lname">
+                        Last Name
+                        <input type="text" name="lname" id="lname">
+                    </label>
+                </fieldset>
+    
+                <fieldset id="contact-info">
+                    <label for="email">
+                        Email
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <label for="phone">
+                        Phone
+                        <input type="tel" name="phone" id="phone">
+                    </label>
+                </fieldset>
+    
+                <fieldset id="password-info">
+                    <label for="pass">
+                        Password
+                        <input type="password" name="pass" id="pass">
+                    </label>
+                    <label for="cnfm">
+                        Confirm Password
+                        <input type="password" name="cnfm" id="cnfm">
+                    </label>
+                </fieldset>
+    
+                <button type="submit">Create Account</button>
+                <p>
+                    Already have an account? <span>Log in</span>
+                </p>
+    
+            </form>
+    
+        </div>
 
-    <!--Logo Section-->
-    <div id="logo-container">
 
-    </div>
-
-    <!--Form Section-->
-
-    <div id="form-container">
-        
-        <form action="/" method="post">
-
-            <fieldset id="personal-info">
-                <label for="fname">
-                    First Name
-                    <input type="text" name="fname" id="fname">
-                </label>
-                <label for="lname">
-                    Last Name
-                    <input type="text" name="lname" id="lname">
-                </label>
-            </fieldset>
-
-            <fieldset id="contact-info">
-                <label for="email">
-                    Email
-                    <input type="email" name="email" id="email">
-                </label>
-                <label for="phone">
-                    Phone
-                    <input type="tel" name="phone" id="phone">
-                </label>
-            </fieldset>
-
-            <fieldset id="password-info">
-                <label for="pass">
-                    Password
-                    <input type="password" name="pass" id="pass">
-                </label>
-                <label for="cnfm">
-                    Confirm Password
-                    <input type="password" name="cnfm" id="cnfm">
-                </label>
-            </fieldset>
-
-            <button type="submit">Create Account</button>
-            <p>
-                Already have an account? <span>Log in</span>
-            </p>
-
-        </form>
-        
-    </div>
 
 </body>
 </html>

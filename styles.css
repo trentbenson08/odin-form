@@ -121,7 +121,7 @@ width: auto;
 height: 9rem;
 position: relative;
 margin: .5rem;
-margin-left: 10rem;
+margin-left: 10vw;
 }
 
 #title {
@@ -192,7 +192,7 @@ input:invalid:hover{
 
 #image{
     position: absolute;
-    min-height: 40vh;
+    min-height: 50vh;
     width: 100%;
     z-index: 0;
     clip: rect(0px,10000px,50vh,0px);

@@ -1,102 +1,176 @@
-#container{
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
+:root {
+
+--main-color: #18122B;
+--gradient-start: hsl(234, 100%, 92%);
+--gradient-end: #6359853f;
+--form-bg-color: #635985;
+--button-bg-color: #393053;
 }
 
-#logo-container{
-    background-color: #FFC1CF;
-    flex: 1 1 40%;
-    display: flex;
-    align-items: center;
+[data-theme="dark"]{
+--main-color: #2A2B2A;
+--gradient-start: #FBAF88;
+--gradient-end: #FFC1CF;
+--form-bg-color: #FFCA0A;
+--button-bg-color: #E2A0FF;
 }
 
-#form-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    flex: 1 1 60%;
-
-    display: flex;
-    align-items: center;
+#container {
+border: 1px solid var(--main-color);
+display: flex;
+flex-direction: row;
+position: absolute;
+width: 100%;
+height: 100%;
+box-sizing: border-box;
+background: linear-gradient(var(--gradient-start), var(--gradient-end));
 }
 
-form{
-
-    height: 15rem;
-    width: 35rem;
+#bar {
+height: 10rem;
+width: 100%;
+background-color: var(--main-color);
+position: absolute;
 }
 
-fieldset{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+#logo-container {
+flex: 1 1 40%;
+display: flex;
+align-items: center;
 }
 
-#form-card{
-    height: 100%;
-    width: 100%;
-    background-color: #FFCA0A;
-    color: #2A2B2A;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: #2A2B2A 8px 8px;
+#form-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex: 1 1 60%;
+display: flex;
+align-items: center;
 }
 
-#form-footer{
-    width: calc(50% + 1em);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+form {
+height: 15rem;
+width: 35rem;
 }
-#submit{
-    position: relative;
-    right: 3rem;
+
+fieldset {
+width: 100%;
+display: flex;
+justify-content: space-around;
 }
-#login{
-    position:relative;
-    left: .25rem;
+
+#form-card {
+position: relative;
+height: 100%;
+width: 100%;
+font-weight: 600;
+background-color: var(--form-bg-color);
+border-radius: 0;
+color: var(--main-color);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+box-shadow: var(--main-color) 8px 8px;
+z-index: 2;
+border: var(--main-color) 2px solid;
+}
+
+#form-footer {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+#submit {
+position: relative;
+right: 3rem;
+width: 10rem;
+height: 2rem;
+border: none;
+border-radius: .5rem;
+font-size: 1.25rem;
+font-family: serif;
+font-weight: 600;
+background-color: var(--button-bg-color);
+right: 4.75rem;
+margin: 1rem;
+box-shadow: var(--main-color) 4px 4px;
+color:var(--gradient-start)
+}
+
+#login {
+position: relative;
+right: 4rem;
+}
+
+#login-link {
+font-weight: 700;
+}
+
+a {
+color: var(--main-color);
+}
+
+#logo-card {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+color: white;
+width: 100%;
+height: 10rem;
+gap: 1rem;
+z-index: 1;
+}
+
+#logo {
+width: auto;
+height: 12rem;
+position: relative;
+top: 2rem;
+margin: .5rem;
+}
+
+#title {
+display: flex;
+flex-direction: column;
+font-size: 3.33rem;
+font-weight: 900;
+font-style: italic;
+line-height: 1.25em;
+}
+
+#emp {
+font-size: 3.5rem;
+font-style: normal;
+font-family: sans-serif;
+align-self: flex-end;
+}
+
+h1 {
+margin: 2em;
+}
+
+label{
+font-size: 1.25rem;
+}
+
+input{
+width: 13rem;
+height: 1.5rem;
+border-radius: .5rem;
+border: 1px solid var(--main-color);
+}
+
+input:focus{
+outline: 3px solid var(--button-bg-color);
+
 }
 
 
-#logo-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2A2B2A;
-    color: white;
-    width: 100%;
-    height: 10rem;
-    gap: 5vw;
+
+.label{
+margin-bottom: .25rem;
 }
 
-#logo{
-    width: auto;
-    height: 12rem;
-    position: relative;
-    top: 2rem;
-}
-
-#title{
-    display: flex;
-    flex-direction: column;
-    font-size: 3.33rem;
-    font-weight: 900;
-    font-style: italic;
-    line-height: 1.25em;
-}
-
-#emp{
-    font-size: 3rem;
-    font-style: normal;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    align-self: flex-end;
-}

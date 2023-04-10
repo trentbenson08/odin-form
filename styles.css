@@ -1,29 +1,22 @@
 :root {
-
 --main-color: #18122B;
 --gradient-start: #d6daff;
 --gradient-end: #6359853f;
 --form-bg-color: #635985;
 --button-bg-color: #393053;
-}
-
-[data-theme="dark"]{
---main-color: #2A2B2A;
---gradient-start: #FBAF88;
---gradient-end: #FFC1CF;
---form-bg-color: #FFCA0A;
---button-bg-color: #E2A0FF;
+--invalid-input: #ca004d;
 }
 
 #container {
 border: 1px solid var(--main-color);
 display: flex;
 flex-direction: row;
+
 position: absolute;
 width: 100%;
 height: 100%;
 box-sizing: border-box;
-background: linear-gradient(var(--gradient-start), var(--gradient-end));
+background: linear-gradient(180deg, var(--button-bg-color), var(--gradient-end));
 }
 
 #bar {
@@ -66,7 +59,7 @@ width: 100%;
 font-weight: 600;
 background-color: var(--form-bg-color);
 border-radius: 0;
-color: var(--main-color);
+color: white;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -125,10 +118,10 @@ z-index: 1;
 
 #logo {
 width: auto;
-height: 12rem;
+height: 9rem;
 position: relative;
-top: 2rem;
 margin: .5rem;
+margin-left: 10rem;
 }
 
 #title {
@@ -148,7 +141,9 @@ align-self: flex-end;
 }
 
 h1 {
-margin: 2em;
+margin: 1em;
+overflow: hidden;
+min-width: 379px;
 }
 
 label{
@@ -174,12 +169,31 @@ input:hover{
 #submit:active{
     position: relative;
     right: calc(4.75rem - 2px);
-
+    background-color: var(--form-bg-color);
     top: 2px;
     box-shadow: var(--main-color)2px 2px;
+}
+#submit:hover{
+    background-color: var(--form-bg-color);
 }
 
 .label{
 margin-bottom: .25rem;
+color: white;
+text-shadow: #000000 2px 0 10px;
 }
 
+input:invalid{
+    outline: 2px solid var(--invalid-input);
+}
+input:invalid:hover{
+    outline: .5px solid var(--invalid-input);
+}
+
+#image{
+    position: absolute;
+    min-height: 40vh;
+    width: 100%;
+    z-index: 0;
+    clip: rect(0px,10000px,50vh,0px);
+}

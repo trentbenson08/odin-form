@@ -8,7 +8,6 @@
 }
 
 #container {
-border: 1px solid var(--main-color);
 display: flex;
 flex-direction: row;
 
@@ -65,9 +64,8 @@ flex-direction: column;
 justify-content: center;
 gap: 2rem;
 align-items: center;
-box-shadow: var(--main-color) 8px 8px;
-z-index: 2;
-border: var(--main-color) 2px solid;
+box-shadow: var(--main-color) 6px 6px;
+border: var(--main-color) 3px solid;
 }
 
 #form-footer {
@@ -159,7 +157,7 @@ border: 1px solid var(--main-color);
 }
 
 input:focus{
-outline: 3px solid var(--button-bg-color);
+outline: 2px solid var(--button-bg-color);
 
 }
 
@@ -188,7 +186,7 @@ input:invalid{
     outline: 2px solid var(--invalid-input);
 }
 input:invalid:hover{
-    outline: .5px solid var(--invalid-input);
+    outline: 1px solid var(--invalid-input);
 }
 
 #image{

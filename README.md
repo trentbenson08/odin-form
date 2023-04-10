@@ -1,6 +1,6 @@
 # Odin Signup Form
 
-![alt text](/Screenshot.png)
+<img src="/Screenshot.png">
 
 ## Description
 
